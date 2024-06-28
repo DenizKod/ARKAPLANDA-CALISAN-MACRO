@@ -149,7 +149,7 @@ return
 
 # TAVSİYELER
 
-<p>- oynadığınız oyunu pencere moduna alına, böylelikle oyunu 2. monitörde yada ufak bir pencerede takip edebilirsiniz.
+<p>- oynadığınız oyunu pencere moduna alın, böylelikle oyunu 2. monitörde yada ufak bir pencerede takip edebilirsiniz.
 <p>- Takıldığınız, yada kodlara güncelleme yapmak için ChatGPT kullanın, çok güzel şeyler ekleyebilir kodunuza.
 <p>- ChatGPT'ye insana anlatır gibi anlatırsanız ne istediğiniz ve benim kodumu verirseniz size daha güncel ve oyununuza uygun bir şey verebilir.
 
