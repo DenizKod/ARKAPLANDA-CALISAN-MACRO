@@ -154,5 +154,19 @@ return
 <p>- ChatGPT'ye insana anlatır gibi anlatırsanız ne istediğiniz ve benim kodumu verirseniz size daha güncel ve oyununuza uygun bir şey verebilir.
 
 
-### KRİTİK NOT LÜTFEN OKU
+### KRİTİK NOT, LÜTFEN OKU !
 <p>- ControlSend özelliği sayesinde hedef pencereye arka plandayken bile macro yapabiliyoruz. ama bu sadece klavye tuşları için oluyor diye biliyorum. oyundaki mouse1, mouse2 tuşunuzu "X" benzeri bir tuşa taşıyın benim yaptığım gibi.
+
+
+## MİNECRAFT MACROSU YAPACAKLAR BURAYI KESİN OKUSUN
+
+1 - C:\Users\bilgisayar kullanıcı adını yaz\AppData\Roaming\.minecraft ve Minecraft klasörüne git
+
+2 - Options'u txt olarak aç
+
+![image](https://github.com/DenizKod/ARKAPLANDA-CALISAN-MACRO/assets/168285638/77195dc9-0a7b-4da4-a875-c426e143f92e)
+
+![image](https://github.com/DenizKod/ARKAPLANDA-CALISAN-MACRO/assets/168285638/aab94cb2-89ef-4ca5-9ca6-63576bd4cb66)
+
+### ARTIK OYUN ARKA PLANA ATILDIĞINDA PAUSE OLMAYACAK
+
