@@ -1,6 +1,6 @@
-# BU SCRİPT NE İŞE YARIYOR?
+# BU MACRO NE İŞE YARIYOR?
 
-<p>- Bu script sizin önceden seçtiğiniz bir oyunu yada uygulamanızı arka plana atsanız bile sadece oyuna yada uygulamaya etki edecek şekilde tuş komutları gönderir. böylelikle siz ön planda eşzamanlı olarak websitelerinde surf yapabilir yada işleriniz halledebilirsiniz.
+<p>- Bu Macro sizin önceden seçtiğiniz bir oyunu yada uygulamanızı arka plana atsanız bile sadece oyuna yada uygulamaya etki edecek şekilde tuş komutları gönderir. böylelikle siz ön planda eşzamanlı olarak websitelerinde surf yapabilir yada işleriniz halledebilirsiniz.
 
 
 # BAŞLAYALIM
