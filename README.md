@@ -1,19 +1,26 @@
-# ARKAPLANDA-CALISAN-MACRO
+# ÖNCELİKLE BU KOD NE İŞE YARIYOR?
 
-### ADIM 1 (YAPMANIZ 5 DAKİKA SÜRECEK)
+<p>- Bu kod sizin önceden seçtiğiniz bir oyunu yada uygulamanızı arka plana atsanız bile sadece oyuna yada uygulamaya etki edecek şekilde tuş komutları gönderir. böylelikle siz ön planda eşzamanlı olarak websitelerinde surf yapabilir yada işleriniz halledebilirsiniz.
+
+
+# BAŞLAYALIM
 
 - Not Defterini Macro olarak kullanmak için tıpkı winrar gibi basit bir eklenti kurmanız gerek
 - Google git > AutoHotKey > AutoHotKey 2.0 İndir
 
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/1f59df65-1711-46ee-9839-70a60de5b7d0)
 
 ![image](https://github.com/DenizKod/ARKAPLANDA-CALISAN-MACRO/assets/168285638/a8120c26-6290-4c18-a8ba-77bc2fcefdab)
 
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/cec10703-9864-43d0-9b38-0ca4dc5a58af)
 
 ![image](https://github.com/DenizKod/ARKAPLANDA-CALISAN-MACRO/assets/168285638/7e3297c2-1b29-4903-bfad-13e746833512)
 
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/98d9c31d-f1cb-4979-b6d3-483bf589c94f)
 
 ![image](https://github.com/DenizKod/ARKAPLANDA-CALISAN-MACRO/assets/168285638/54f0b575-8eda-4441-9886-d201f6321d5f)
 
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/b18ab5a4-081c-48ce-8df6-ef5da03d94b4)
 
 # AŞAĞIDA KODU NOT DEFTERİNE YAPIŞTIR VE KAYDET
 
@@ -78,13 +85,17 @@ if (loopActive && !isPaused) {
 return
 ```
 
-### ADIM 2
+# NASIL ÇALIŞIR?
 
 <p>- F2 (MACROYU BAŞLATIR)
 <p>- F3 (MACROYU DURDURUR)
 <p>- F4 (MACROYA RELOAD) F3 BASMADAN BUNA BASMAYIN ÇÜNKÜ MACRO DURMAZ
 
-## KENDİ MACRONU OLUŞTUR
+# KENDİ TUŞ TAKIMLARINI NASIL OLUŞTURURSUN?
+
+<p> Öncelikle aşağıdaki kod fark ettiyseniz "a tuşuna 26850 milisaniye bas" gibi kodlar içeriyor. Eğer kendi oyununuza özel bir tuş komutları oluşturmak istiyorsanız ama "ben bu işlerden hiç anlamam" diyorsanız; Yukarıdaki kodun tam halini CHATGPT'ye gönderin ve basmak istediğiniz tuşların milisaniyelerini ve sırasını yapay zekaya insana anlatır gibi anlatın. Ardından yapay zekaya kodun size düzeltmiş halini tam haliyle geri vermesini isteyin. 
+
+(DİKKAT EDİN ! Yapay Zeka sadece tuş komutlarını bölümünü değiştirsin ve kodların ControlSend,, komutu içerdiğine dikkat edin. ÇÜNKÜ ! kodun içerisindeki ControlSend,, komutu sayesinde oyun arkaplandayken tuş komutları gönderebiliyorsunuz.)
 
 ```
 RunMacro:
@@ -128,37 +139,16 @@ return
 
 <p>- Fark ettiyseniz ControlSend,, {x up}, kodunu en alt kısma koyduğum için tüm bu tuşlara basma sırasında x tuşuna hep basılı tutarak yaptı
 
+# KRİTİK TAVSİYELER (OKUMADAN SAYFAYI KAPATMA)
 
-### MANTIĞI KAVRAMANIZ İÇİN EKSTRA ÖRNEK
-```
-  ControlSend,, {x down}, %windowTitle%
-    Sleep, 5
-    ControlSend,, {a down}, %windowTitle%
-    Sleep, 26850
-    ControlSend,, {a up}, %windowTitle%
-    Sleep, 5
-    ControlSend,, {x up}, %windowTitle%
-    <p>- w tuşuna 450 milisaniye bas
-    <p>- w tuşuna basmayı bırak
-```
-
-<p>- Eğer kod sıralamasını yukarıdaki gibi yapsaydım x tuşuna basmayı bırakmayı a tuşuna basmayı bitirdikten sonra bırakırdı ve w tuşuna geldiğinde artık x tuşuna basmadan diğer tuşlara basardı. umarım mantığını anlamışsınızdır.
+<p>- Controlsend,, özelliğinde mouse tuşları etkisiz olduğu için mouse kontrolünün arka plandayken çalışması mümkün değildir. eğer oynadığınız oyunun Ayarlar kısmından "mouse1, mouse2" gibi tuşlara klavye tuşu atayabiliyorsanız lütfen klavyeden bir tuş ayarlayın.
+<p>- oynadığınız oyunu pencere moduna alın böylelikle oyunu 2. monitörde yada daha ufak bir pencere yaparsanız daha kolay takip edebilirsiniz.
+<p>- Takıldığınız yada kodlara güncelleme yapmak için ChatGPT kullanın. çok güzel şeyler ekleyebilir kodunuza.
 
 
+# MİNECRAFT MACROSU YAPACAKLAR BURAYI KESİN OKUSUN
 
-
-# TAVSİYELER
-
-<p>- oynadığınız oyunu pencere moduna alın, böylelikle oyunu 2. monitörde yada ufak bir pencerede takip edebilirsiniz.
-<p>- Takıldığınız, yada kodlara güncelleme yapmak için ChatGPT kullanın, çok güzel şeyler ekleyebilir kodunuza.
-<p>- ChatGPT'ye insana anlatır gibi anlatırsanız ne istediğiniz ve benim kodumu verirseniz size daha güncel ve oyununuza uygun bir şey verebilir.
-
-
-### KRİTİK NOT, LÜTFEN OKU !
-<p>- ControlSend özelliği sayesinde hedef pencereye arka plandayken bile macro yapabiliyoruz. ama bu sadece klavye tuşları için oluyor diye biliyorum. oyundaki mouse1, mouse2 tuşunuzu "X" benzeri bir tuşa taşıyın benim yaptığım gibi.
-
-
-## MİNECRAFT MACROSU YAPACAKLAR BURAYI KESİN OKUSUN
+<p> Minecraft'da eğer oyun penceresi seçili değilse Pause ekranı açılır. bunun olmasını engellemek için aşağıdaki adımları uygula
 
 1 - C:\Users\bilgisayar kullanıcı adını yaz\AppData\Roaming\.minecraft ve Minecraft klasörüne git
 
