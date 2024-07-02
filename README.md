@@ -84,11 +84,21 @@ if (loopActive && !isPaused) {
 }
 return
 ```
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/1f59df65-1711-46ee-9839-70a60de5b7d0)
+
+![image](https://github.com/DenizKod/Oyunlar-Arkaplandayken-Calisan-Macro/assets/168285638/66b66221-6da1-49a5-b7f5-e8ece4ae2a25)
+
+![image](https://github.com/DenizKod/Oyunlarda-Arkaplanda-Calisan-Macro/assets/168285638/1f59df65-1711-46ee-9839-70a60de5b7d0)
+
+SCRİPTİN AKTİF OLDUĞU ANLAMINA GELİR
+
+![image](https://github.com/DenizKod/Oyunlar-Arkaplandayken-Calisan-Macro/assets/168285638/b31ac6b0-cd41-4c85-a920-d0132ed190a0)
+
 
 # NASIL ÇALIŞIR?
 
 <p>- F2 (MACROYU BAŞLATIR)
-<p>- F3 (MACROYU DURDURUR)
+<p>- F3 (MACROYU DURDUR)
 <p>- F4 (MACROYA RELOAD) F3 BASMADAN BUNA BASMAYIN ÇÜNKÜ MACRO DURMAZ
 
 # KENDİ TUŞ TAKIMLARINI NASIL OLUŞTURURSUN?
