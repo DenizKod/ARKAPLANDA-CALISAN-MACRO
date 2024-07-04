@@ -104,6 +104,8 @@ SCRİPTİN AKTİF OLDUĞU ANLAMINA GELİR
 <p>- F3 (MACROYU DURDUR)
 <p>- F4 (MACROYA RELOAD) F3 BASMADAN BUNA BASMAYIN ÇÜNKÜ MACRO DURMAZ
 
+---------------------------------------------
+
 # KENDİ TUŞ TAKIMLARINI NASIL OLUŞTURURSUN?
 
 <p> Öncelikle aşağıdaki kod fark ettiyseniz "a tuşuna 26850 milisaniye bas" gibi kodlar içeriyor. Eğer kendi oyununuza özel bir tuş komutları oluşturmak istiyorsanız ama "ben bu işlerden hiç anlamam" diyorsanız; Yukarıdaki kodun tam halini CHATGPT'ye gönderin ve basmak istediğiniz tuşların milisaniyelerini ve sırasını yapay zekaya insana anlatır gibi anlatın. Ardından yapay zekaya kodun size düzeltmiş halini tam haliyle geri vermesini isteyin. 
@@ -153,13 +155,13 @@ return
 <p>- w tuşuna basmayı bırak
 <p>- mouse sol click basmayı bırak
 
+---------------------------------------------
+
 # KRİTİK TAVSİYELER (OKUMADAN SAYFAYI KAPATMA)
 
 <p>- Controlsend,, ve PostMessage, kodları sayesinde oyunu önplana getirmeden hem klavye hem de mouse tuşlarına basabiliyoruz.
 <p>- oynadığınız oyunu pencere moduna alın böylelikle oyunu 2. monitörde yada daha ufak bir pencere yaparsanız daha kolay takip edebilirsiniz.
 <p>- Takıldığınız yada kodlara güncelleme yapmak için ChatGPT kullanın. çok güzel şeyler ekleyebilir kodunuza.
-
-#### -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <p> Controlsend,, (Klavye tuşları için)
 <p> PostMessage, (Mouse tuşları için)
@@ -167,7 +169,7 @@ return
 <p> %WM_LBUTTONDOWN% (Mouse Sol click kodu)
 <p> %WM_RBUTTONDOWN% (Mouse Sağ click kodu)
 
-#### -------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------
 
 # MİNECRAFT MACROSU YAPACAKLAR BURAYI KESİN OKUSUN
 
