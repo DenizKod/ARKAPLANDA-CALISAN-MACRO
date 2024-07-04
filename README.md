@@ -166,8 +166,12 @@ return
 <p> Controlsend,, (Klavye tuşları için)
 <p> PostMessage, (Mouse tuşları için)
 
-<p> %WM_LBUTTONDOWN% (Mouse Sol click kodu)
-<p> %WM_RBUTTONDOWN% (Mouse Sağ click kodu)
+#### (Mouse Sol click kodu)
+
+<p> PostMessage, %WM_LBUTTONDOWN%, , , , %windowTitle%
+    
+#### (Mouse Sağ click kodu)
+<p> PostMessage, %WM_RBUTTONDOWN%, , , , %windowTitle%
 
 ---------------------------------------------
 
