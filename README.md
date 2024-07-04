@@ -60,7 +60,8 @@ return
 
 RunMacro:
 if (loopActive && !isPaused) {
-    ControlSend,, {x down}, %windowTitle%
+    ; Sol tıklamayı başlat
+    PostMessage, %WM_LBUTTONDOWN%, , , , %windowTitle%
     Sleep, 5
     ControlSend,, {a down}, %windowTitle%
     Sleep, 26850
@@ -77,7 +78,9 @@ if (loopActive && !isPaused) {
     ControlSend,, {w down}, %windowTitle%
     Sleep, 450
     ControlSend,, {w up}, %windowTitle%
-    ControlSend,, {x up}, %windowTitle%
+    ; Sol tıklamayı bırak
+    PostMessage, %WM_LBUTTONUP%, , , , %windowTitle%
+    Sleep, 1
 }
 if (loopActive && !isPaused) {
     SetTimer, RunMacro, 10
@@ -110,7 +113,8 @@ SCRİPTİN AKTİF OLDUĞU ANLAMINA GELİR
 ```
 RunMacro:
 if (loopActive && !isPaused) {
-    ControlSend,, {x down}, %windowTitle%
+    ; Sol tıklamayı başlat
+    PostMessage, %WM_LBUTTONDOWN%, , , , %windowTitle%
     Sleep, 5
     ControlSend,, {a down}, %windowTitle%
     Sleep, 26850
@@ -127,7 +131,9 @@ if (loopActive && !isPaused) {
     ControlSend,, {w down}, %windowTitle%
     Sleep, 450
     ControlSend,, {w up}, %windowTitle%
-    ControlSend,, {x up}, %windowTitle%
+    ; Sol tıklamayı bırak
+    PostMessage, %WM_LBUTTONUP%, , , , %windowTitle%
+    Sleep, 1
 }
 if (loopActive && !isPaused) {
     SetTimer, RunMacro, 10
@@ -136,7 +142,7 @@ return
 ```
 
 ### YUKARDAKİ KOD TAM OLARAK NE YAPIYOR?
-<p>- x tuşuna basılı tut
+<p>- mouse sol click basılı tut
 <p>- a tuşuna basılı tut 26850 saniye
 <p>- a tuşuna basmayı bırak
 <p>- w tuşuna 450 milisaniye bas
@@ -145,16 +151,23 @@ return
 <p>- d tuşuna basmayı bırak
 <p>- w tuşuna 450 milisaniye bas
 <p>- w tuşuna basmayı bırak
-<p>- x tuşuna basmayı bırak
-
-<p>- Fark ettiyseniz ControlSend,, {x up}, kodunu en alt kısma koyduğum için tüm bu tuşlara basma sırasında x tuşuna hep basılı tutarak yaptı
+<p>- mouse sol click basmayı bırak
 
 # KRİTİK TAVSİYELER (OKUMADAN SAYFAYI KAPATMA)
 
-<p>- Controlsend,, özelliğinde mouse tuşları etkisiz olduğu için mouse kontrolünün arka plandayken çalışması mümkün değildir. eğer oynadığınız oyunun Ayarlar kısmından "mouse1, mouse2" gibi tuşlara klavye tuşu atayabiliyorsanız lütfen klavyeden bir tuş ayarlayın.
+<p>- Controlsend,, ve PostMessage, kodları sayesinde oyunu önplana getirmeden hem klavye hem de mouse tuşlarına basabiliyoruz.
 <p>- oynadığınız oyunu pencere moduna alın böylelikle oyunu 2. monitörde yada daha ufak bir pencere yaparsanız daha kolay takip edebilirsiniz.
 <p>- Takıldığınız yada kodlara güncelleme yapmak için ChatGPT kullanın. çok güzel şeyler ekleyebilir kodunuza.
 
+#### -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p> Controlsend,, (Klavye tuşları için)
+<p> PostMessage, (Mouse tuşları için)
+
+<p> %WM_LBUTTONDOWN% (Mouse Sol click kodu)
+<p> %WM_RBUTTONDOWN% (Mouse Sağ click kodu)
+
+#### -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # MİNECRAFT MACROSU YAPACAKLAR BURAYI KESİN OKUSUN
 
