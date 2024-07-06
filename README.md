@@ -29,17 +29,25 @@
 #NoEnv
 SetTitleMatchMode, 2
 
-windowTitle := "OYUN PENCERESİNİN İSMİNİ PARANTEZİN İÇİNE YAZIN"
+windowTitle := "Lunar Client 1.8.9 (v2.16.0-2426)"
 loopActive := false
 isPaused := false
 
-; Macro
+; Windows mesajlarını kullanarak tıklama işlemleri
+WM_LBUTTONDOWN := 0x0201
+WM_LBUTTONUP := 0x0202
+WM_RBUTTONDOWN := 0x0204
+WM_RBUTTONUP := 0x0205
+WM_KEYDOWN := 0x0100
+WM_KEYUP := 0x0101
+
+; Betiği yükleme fonksiyonu
 LoadScript() {
     Reload
     SetTimer, RunMacro, Off
     loopActive := false
     isPaused := false
-    MsgBox, Macro
+    MsgBox, Betik yeniden yüklendi.
 }
 
 F2::
@@ -51,10 +59,11 @@ return
 F3::
 isPaused := true
 SetTimer, RunMacro, Off
-ControlSend,, {x up}{a up}{w up}{d up}, %windowTitle%
+ControlSend,, {a up}{w up}{d up}, %windowTitle%
+PostMessage, %WM_LBUTTONUP%, , , , %windowTitle% ; Sol tıklamayı bırak
 return
 
-F4:: ; Macroyu tazele
+F4:: ; Betiği yeniden yükle
 LoadScript()
 return
 
