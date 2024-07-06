@@ -29,7 +29,7 @@
 #NoEnv
 SetTitleMatchMode, 2
 
-windowTitle := "Lunar Client 1.8.9 (v2.16.0-2426)"
+windowTitle := "OYUN/UYGULAMA PENCERE ADINI BURAYA YAZ"
 loopActive := false
 isPaused := false
 
